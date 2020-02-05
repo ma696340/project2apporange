@@ -4,7 +4,7 @@
 
 // Dependencies
 // =============================================================
-var Chirp = require("../models/recipe");
+var Recipe = require("../models/recipe");
 
 
 // Routes
