@@ -8,11 +8,11 @@ USE recipes_db;
 
 CREATE TABLE recipe (
 	recipe_id INT NOT NULL AUTO_INCREMENT, 
-    recipe_name VARCHAR(255) NOT NULL, 
-    recipe_ingredients VARCHAR(255) NOT NULL,
+    recipe_name TEXT(60000) NOT NULL, 
+    recipe_ingredients TEXT(60000) NOT NULL,
     prep_time INTEGER(50),
     cook_time INTEGER(50),
-    recipe_instructions VARCHAR(255) NOT NULL,
+    recipe_instructions TEXT(60000) NOT NULL,
     
     PRIMARY KEY (recipe_id)
 
