@@ -23,11 +23,11 @@ $("#recipe_submit").on("click", function(event) {
         var row = $("<div>");
         row.addClass("recipe");
   
-        row.append("<p>" + newRecipe.recipe_name + "</p>");
-        row.append("<p>" + newRecipe.recipe_ingredients + "</p>");
-        row.append("<p>" + newRecipe.prep_time + "</p>");
-        row.append("<p>" + newRecipe.cook_time + "</p>");
-        row.append("<p>" + newRecipe.recipe_instructions + "</p>");
+        row.append("Recipe Name: " + newRecipe.recipe_name + "</p>");
+        row.append("Ingredients: " + newRecipe.recipe_ingredients + "</p>");
+        row.append("Prep Time: " + newRecipe.prep_time + "</p>");
+        row.append("Cook Time: " + newRecipe.cook_time + "</p>");
+        row.append("Instructions: " + newRecipe.recipe_instructions + "</p>");
         
         $("#recipes_area").prepend(row);
   
@@ -48,11 +48,11 @@ $("#recipe_submit").on("click", function(event) {
         var row = $("<div>");
         row.addClass("recipe");
   
-        row.append("<p>" + data[i].recipe_name + "</p>");
-        row.append("<p>" + data[i].recipe_ingredients + "</p>");
-        row.append("<p>" + data[i].prep_time + "</p>");
-        row.append("<p>" + data[i].cook_time + "</p>");
-        row.append("<p>" + data[i].recipe_instructions + "</p>");
+        row.append("Recipe Name: " + data[i].recipe_name + "</p>");
+        row.append("Ingredients: " + data[i].recipe_ingredients + "</p>");
+        row.append("Prep Time: " + data[i].prep_time + "</p>");
+        row.append("Cook Time: " + data[i].cook_time + "</p>");
+        row.append("Instructions: " + data[i].recipe_instructions + "</p>");
         
   
         $("#recipes_area").prepend(row);
